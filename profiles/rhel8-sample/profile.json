@@ -1,0 +1,28 @@
+{
+    "profile": {
+      "uuid": "4dd1e5a9-829d-43c9-b6c7-89631fc202c5",
+      "metadata": {
+        "title": "Red Hat Enterprise Linux 8 Sample Profile",
+        "last-modified": "2024-07-12T17:57:22.102725+00:00",
+        "version": "1.0.0",
+        "oscal-version": "1.1.2"
+      },
+      "imports": [
+        {
+          "href": "trestle://catalogs/rhel8/catalog.json",
+          "include-controls": [
+            {
+              "with-ids": [
+                "CIS-5.2.16",
+                "CIS-5.2.17",
+                "CIS-5.2.18"
+              ]
+            }
+          ]
+        }
+      ],
+      "merge": {
+        "as-is": true
+      }
+    }
+}
